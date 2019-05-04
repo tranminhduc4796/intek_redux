@@ -4,7 +4,11 @@ import { createStore } from 'redux'
 import CitySelector from './components/CitySelector/CitySelector'
 import cities from './assets/data/city.list'
 
-const store = createStore(rootReducer, {cities: cities});
+var initialState = {
+    cities: cities
+}
+
+const store = createStore((state = initialState, action) => {return state});
 
 export default class WeatherApp extends React.Component{
     render() {

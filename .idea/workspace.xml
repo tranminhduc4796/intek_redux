@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fef32c45-e951-404b-b42f-26a1860905cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/WeatherApp/WeatherApp.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CitySelector.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apps/components/FBButton/FBButton.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apps/components/FBButton/styles.js" afterDir="false" />
@@ -14,6 +13,8 @@
       <change beforePath="$PROJECT_DIR$/apps/BasicApp/components/Header/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/components/Header/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/BasicApp/components/Movie/Movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/BasicApp/components/Movie/Movie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/BasicApp/components/Movie/Stylish/Stylish.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/BasicApp/components/Movie/Stylish/Stylish.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/WeatherApp/WeatherApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/WeatherApp/WeatherApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/WeatherApp/assets/data/city.list.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/WeatherApp/assets/data/city.list.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -27,7 +28,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -39,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/WeatherApp/WeatherApp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+            <state relative-caret-position="195">
+              <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -65,7 +66,11 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/WeatherApp/assets/data/city.list.json">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -124,8 +129,9 @@
         <option value="$PROJECT_DIR$/apps/components/FBButton/FBButton.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CitySelector.js" />
-        <option value="$PROJECT_DIR$/apps/WeatherApp/WeatherApp.js" />
         <option value="$PROJECT_DIR$/App.js" />
+        <option value="$PROJECT_DIR$/apps/WeatherApp/assets/data/city.list.json" />
+        <option value="$PROJECT_DIR$/apps/WeatherApp/WeatherApp.js" />
       </list>
     </option>
   </component>
@@ -236,12 +242,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556932657066</updated>
-      <workItem from="1556932658262" duration="13433000" />
+      <workItem from="1556932658262" duration="14047000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13433000" />
+    <option name="totallyTimeSpent" value="14047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -369,9 +375,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/WeatherApp/assets/data/city.list.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CitySelector.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -382,22 +385,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/WeatherApp/WeatherApp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/WeatherApp/assets/data/city.list.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/WeatherApp/WeatherApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
