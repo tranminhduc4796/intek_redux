@@ -2,7 +2,7 @@ import React from 'react'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import CitySelector from './components/CitySelector/CitySelector'
-import cities from './assets/data/city.list'
+import cities from './assets/data/city.list.json'
 
 var initialState = {
     cities: cities
