@@ -1,14 +1,17 @@
 import * as React from 'react';
-import React, { AppRegistry } from 'react-native';
+import {AppRegistry} from 'react-native';
 import BasicApp from './apps/BasicApp/BasicApp'
+import WeatherApp from './apps/WeatherApp/WeatherApp'
 
 class ReduxApp extends React.Component {
-  render() {
-    return (
-      <BasicApp />
-    );
-  }
+    render() {
+        return (
+            //  Basic App
+            <WeatherApp/>
+        );
+    }
 }
 
+export default ReduxApp;
 AppRegistry.registerComponent('ReduxApp', () => ReduxApp);
 
