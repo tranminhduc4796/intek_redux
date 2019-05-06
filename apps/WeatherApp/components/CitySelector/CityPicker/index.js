@@ -41,4 +41,4 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps())(CityPickerContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(CityPickerContainer)

@@ -4,9 +4,7 @@
     <list default="true" id="fef32c45-e951-404b-b42f-26a1860905cb" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CityInput/index.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CityInput/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CityPicker/index.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CityPicker/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/WeatherApp/container/WeatherAppContainer.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apps/WeatherApp/index.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apps/WeatherApp/redux/actions.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apps/components/FBButton/FBButton.js" afterDir="false" />
@@ -22,7 +20,9 @@
       <change beforePath="$PROJECT_DIR$/apps/BasicApp/components/Movie/Stylish/Stylish.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/BasicApp/components/Movie/Stylish/Stylish.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/WeatherApp/WeatherApp.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/WeatherApp/assets/data/city.list.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/WeatherApp/assets/data/city.list.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CityPicker/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CityPicker/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CitySelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CitySelector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/WeatherApp/container/WeatherAppContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/WeatherApp/container/WeatherAppContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/WeatherApp/redux/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/WeatherApp/redux/reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -36,56 +36,114 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CityInput/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CitySelector.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/apps/WeatherApp/container/WeatherAppContainer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CityPicker/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CitySelector.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+                  <folding>
+                    <element signature="e#0#31#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/apps/WeatherApp/container/WeatherAppContainer.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+                  <folding>
+                    <element signature="e#0#25#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/apps/WeatherApp/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+                  <folding>
+                    <element signature="e#0#25#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/package.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="16" selection-start-line="16" selection-end-line="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/apps/WeatherApp/redux/reducer.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+                  <folding>
+                    <element signature="e#0#50#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CityPicker/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="645">
+                  <caret line="43" column="58" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
+                  <folding>
+                    <element signature="e#0#31#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <splitter split-orientation="vertical" split-proportion="0.5881459">
+          <split-first>
+            <leaf>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/apps/WeatherApp/redux/reducer.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="360">
+                      <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+                      <folding>
+                        <element signature="e#0#50#0" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/apps/WeatherApp/redux/actions.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="15">
+                      <caret line="1" column="24" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="24" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -119,7 +177,6 @@
         <option value="$PROJECT_DIR$/apps/BasicApp/BasicApp.js" />
         <option value="$PROJECT_DIR$/apps/components/FBButton/styles.js" />
         <option value="$PROJECT_DIR$/apps/components/FBButton/FBButton.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/apps/WeatherApp/assets/data/city.list.json" />
         <option value="$PROJECT_DIR$/apps/WeatherApp/redux/store.js" />
         <option value="$PROJECT_DIR$/apps/WeatherApp/WeatherApp.js" />
@@ -131,9 +188,10 @@
         <option value="$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CityPicker/styles.js" />
         <option value="$PROJECT_DIR$/apps/WeatherApp/redux/reducer.js" />
         <option value="$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CityInput/index.js" />
+        <option value="$PROJECT_DIR$/apps/WeatherApp/container/WeatherAppContainer.js" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CityPicker/index.js" />
         <option value="$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CitySelector.js" />
-        <option value="$PROJECT_DIR$/apps/WeatherApp/container/WeatherAppContainer.js" />
       </list>
     </option>
   </component>
@@ -204,6 +262,12 @@
               <item name="intek_redux" type="b2602c69:ProjectViewProjectNode" />
               <item name="intek_redux" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="intek_redux" type="b2602c69:ProjectViewProjectNode" />
+              <item name="intek_redux" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
               <item name="WeatherApp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -226,7 +290,25 @@
               <item name="intek_redux" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
               <item name="WeatherApp" type="462c0819:PsiDirectoryNode" />
-              <item name="container" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="CitySelector" type="462c0819:PsiDirectoryNode" />
+              <item name="CityInput" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="intek_redux" type="b2602c69:ProjectViewProjectNode" />
+              <item name="intek_redux" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="WeatherApp" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="CitySelector" type="462c0819:PsiDirectoryNode" />
+              <item name="CityPicker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="intek_redux" type="b2602c69:ProjectViewProjectNode" />
+              <item name="intek_redux" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="WeatherApp" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -270,12 +352,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556932657066</updated>
-      <workItem from="1556932658262" duration="29740000" />
+      <workItem from="1556932658262" duration="31857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29740000" />
+    <option name="totallyTimeSpent" value="31857000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -286,11 +368,11 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32925585" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32925585" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32925585" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32925585" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -405,13 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/components/FBButton/FBButton.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -448,16 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/WeatherApp/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -485,27 +550,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CityPicker/index.js">
+    <entry file="file://$PROJECT_DIR$/apps/WeatherApp/container/WeatherAppContainer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        <state relative-caret-position="210">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/WeatherApp/redux/actions.js">
+    <entry file="file://$PROJECT_DIR$/apps/WeatherApp/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        <state relative-caret-position="75">
+          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/WeatherApp/redux/reducer.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -519,22 +587,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CitySelector.js">
+    <entry file="file://$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CityPicker/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        <state relative-caret-position="645">
+          <caret line="43" column="58" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/WeatherApp/container/WeatherAppContainer.js">
+    <entry file="file://$PROJECT_DIR$/apps/WeatherApp/redux/reducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="360">
+          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/WeatherApp/redux/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/WeatherApp/components/CitySelector/CitySelector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
