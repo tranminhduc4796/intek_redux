@@ -1,7 +1,8 @@
 import React from 'react'
-import CitySelector from '../components/CitySelector'
+import { View } from 'react-native'
+import CitySelector from '../components/CitySelector/CitySelector'
 
-export default class WeatherAppContainer extends React.Component{
+class WeatherAppContainer extends React.Component{
     render() {
         return(
             <View>
@@ -10,3 +11,5 @@ export default class WeatherAppContainer extends React.Component{
         )
     }
 }
+
+export default WeatherAppContainer;

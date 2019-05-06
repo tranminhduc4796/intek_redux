@@ -1,14 +1,16 @@
 import * as React from 'react';
 import {
-    Text,
     View,
 } from 'react-native';
+import CityInput from './CityInput/index'
+import CityPicker from './CityPicker/index'
 
 class CitySelector extends React.Component {
     render() {
         return (
             <View>
-                <Text>Hello</Text>
+                <CityInput/>
+                <CityPicker/>
             </View>
         )
     }

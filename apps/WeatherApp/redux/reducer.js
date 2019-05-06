@@ -3,7 +3,7 @@ import { CHANGE_TEXT, PICK_CITY } from './actions'
 
 let initialState = {
     cities: cities,
-    pickCity: {}
+    pickedCity: {}
 }
 
 function process_text(text) {
@@ -30,7 +30,7 @@ function rootReducer(state = initialState, action) {
         case PICK_CITY:
             if (state.cities) {
                 return Object.assign({}, state, {
-                    pickCity: state.cities[0]
+                    pickedCity: action.city
                 })
             }
         default:
