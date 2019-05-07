@@ -13,7 +13,7 @@ import {pickCity} from "../../../redux/actions";
 class CityPickerContainer extends React.Component {
     render() {
         let city_list = this.props.cities.map(city => {
-            return <Picker.Item label={city.name} value={city.name}/>
+            return <Picker.Item label={city.name} value={city.id}/>
         })
         return (
             <Picker

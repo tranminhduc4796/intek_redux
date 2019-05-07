@@ -24,8 +24,13 @@ function rootReducer(state = initialState, action) {
     switch (action.type) {
         case CHANGE_TEXT:
             let cities_clone = process_text(action.text)
+            let pickedCity = {}
+            if (cities_clone) {
+                pickedCity = cities_clone[0].id
+            }
             return Object.assign({}, state, {
-                cities: cities_clone
+                cities: cities_clone,
+                pickedCity: pickedCity
             })
         case PICK_CITY:
             if (state.cities) {
