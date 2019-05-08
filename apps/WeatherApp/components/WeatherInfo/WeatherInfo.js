@@ -6,6 +6,7 @@ import {
 } from 'react-native'
 import styles from './styles'
 import {connect} from "react-redux";
+
 const api_endpoint = 'https://api.openweathermap.org/data/2.5/weather';
 const api_key = 'APPID=f8952a6211da18964a8aa7edcfff88a6';
 
@@ -43,29 +44,35 @@ class WeatherInfoContainer extends React.Component {
     }
 
     render() {
-        let icon_uri = 'http://openweathermap.org/img/w/' + this.state.weather_data.weather[0].icon + '.png'
-        return (
-            <View>
-                <Image
-                    source={{
-                        uri: icon_uri
-                    }}
-                    style={styles.weather_img}
-                />
-                <Text style={{textAlign: 'center'}}>
-                    City: {this.state.weather_data.name}
-                </Text>
-                <Text style={{textAlign: 'center'}}>
-                    Temperature: {this.state.weather_data.main.temp}
-                </Text>
-                <Text style={{textAlign: 'center'}}>
-                    Pressure: {this.state.weather_data.main.pressure}
-                </Text>
-                <Text style={{textAlign: 'center'}}>
-                    Humidity: {this.state.weather_data.main.humidity}
-                </Text>
-            </View>
-        )
+        if (this.state.weather_data) {
+            if (this.state.weather_data.cod !== '404') {
+                let icon_uri = 'http://openweathermap.org/img/w/' + this.state.weather_data.weather[0].icon + '.png'
+                return (
+                    <View>
+                        <Image
+                            source={{
+                                uri: icon_uri
+                            }}
+                            style={styles.weather_img}
+                        />
+                        <Text style={{textAlign: 'center'}}>
+                            City: {this.state.weather_data.name}
+                        </Text>
+                        <Text style={{textAlign: 'center'}}>
+                            Temperature: {this.state.weather_data.main.temp}
+                        </Text>
+                        <Text style={{textAlign: 'center'}}>
+                            Pressure: {this.state.weather_data.main.pressure}
+                        </Text>
+                        <Text style={{textAlign: 'center'}}>
+                            Humidity: {this.state.weather_data.main.humidity}
+                        </Text>
+                    </View>
+                )
+            } else {
+                return <Text style={styles.weather_warning}>City Not Found</Text>
+            }
+        }
     }
 }
 
