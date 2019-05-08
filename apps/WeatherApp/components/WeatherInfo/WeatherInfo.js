@@ -43,7 +43,7 @@ class WeatherInfoContainer extends React.Component {
 
     render() {
         if (Object.keys(this.state.weather_data).length) {
-            if (this.state.weather_data.cod !== '404') {
+            if (this.state.weather_data.cod === 200) {
                 let icon_uri = 'http://openweathermap.org/img/w/' + this.state.weather_data.weather[0].icon + '.png'
                 return (
                     <View>
