@@ -3,7 +3,7 @@ import { CHANGE_TEXT, PICK_CITY } from './actions'
 
 let initialState = {
     cities: cities,
-    pickedCity: {}
+    pickedCity: cities[0]
 }
 
 function process_text(text) {
