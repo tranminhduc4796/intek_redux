@@ -5,20 +5,38 @@ import {
     Image,
 } from 'react-native'
 import styles from './styles'
-
+import {connect} from "react-redux";
 const api_endpoint = 'https://api.openweathermap.org/data/2.5/weather';
 const api_key = 'APPID=f8952a6211da18964a8aa7edcfff88a6';
 
-function fetch_city(func, city_name) {
-    fetch(api_endpoint + '?q=' + city_name + '&' + api_key + '&units=metric')
-        .then(response => response.json())
-        .then(responseJson => {
-            func(responseJson);
-        })
-        .catch(error => console.log(error)); //to catch the errors if any
-}
 
-class WeatherInfo extends React.Component {
+class WeatherInfoContainer extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            weather_data: {}
+        }
+    }
+
+    __fetch_city(city_id) {
+        fetch(api_endpoint + '?id=' + city_id + '&' + api_key + '&units=metric')
+            .then(response => response.json())
+            .then(responseJson => {
+                this.setState({
+                    weather_data: responseJson
+                });
+            })
+            .catch(error => console.log(error)); //to catch the errors if any
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        console.log('componentDidUpdate run')
+        if (this.props.pickedCity !== prevProps.pickedCity) {
+            this.__fetch_city(this.props.pickedCity)
+        }
+
+    }
+
     render() {
         let icon_uri = 'http://openweathermap.org/img/w/' + this.state.weather_data.weather[0].icon + '.png'
         return (
@@ -46,4 +64,10 @@ class WeatherInfo extends React.Component {
     }
 }
 
-export default WeatherInfo;
+const mapStateToProps = state => {
+    return {
+        pickedCity: state.pickedCity
+    };
+};
+
+export default connect(mapStateToProps)(WeatherInfoContainer)
