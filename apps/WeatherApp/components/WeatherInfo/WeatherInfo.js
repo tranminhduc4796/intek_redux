@@ -29,6 +29,11 @@ class WeatherInfoContainer extends React.Component {
             .catch(error => console.log(error)); //to catch the errors if any
     }
 
+    componentDidMount() {
+        console.log('componentDidMount run')
+        this.__fetch_city(this.props.pickedCity)
+    }
+
     componentDidUpdate(prevProps, prevState) {
         console.log('componentDidUpdate run')
         if (this.props.pickedCity !== prevProps.pickedCity) {
