@@ -44,7 +44,7 @@ class WeatherInfoContainer extends React.Component {
     }
 
     render() {
-        if (this.state.weather_data) {
+        if (Object.keys(this.state.weather_data).length) {
             if (this.state.weather_data.cod !== '404') {
                 let icon_uri = 'http://openweathermap.org/img/w/' + this.state.weather_data.weather[0].icon + '.png'
                 return (
@@ -72,6 +72,10 @@ class WeatherInfoContainer extends React.Component {
             } else {
                 return <Text style={styles.weather_warning}>City Not Found</Text>
             }
+        } else {
+            return (
+                <View/>
+            )
         }
     }
 }
