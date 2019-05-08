@@ -34,7 +34,7 @@ class WeatherInfoContainer extends React.Component {
         this.__fetch_city(this.props.pickedCity)
     }
 
-    componentDidUpdate(prevProps, prevState) {
+    componentDidUpdate(prevProps) {
         if (this.props.pickedCity !== prevProps.pickedCity) {
             this.__fetch_city(this.props.pickedCity)
         }
