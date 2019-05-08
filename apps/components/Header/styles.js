@@ -4,15 +4,16 @@ import {
 
 export default StyleSheet.create({
     header_view: {
-      marginTop: 23,
-      width: '100%',
-      backgroundColor: '#33bbff',
-      color: 'white',
+        marginTop: 23,
+        marginBottom: '10%',
+        width: '100%',
+        backgroundColor: '#33bbff',
+        color: 'white',
     },
     header_text: {
-      alignSelf: 'center',
-      fontWeight: 'bold',
-      fontSize: 30,
-      color: 'white',
+        alignSelf: 'center',
+        fontWeight: 'bold',
+        fontSize: 30,
+        color: 'white',
     },
 });

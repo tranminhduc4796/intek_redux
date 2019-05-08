@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Facebook } from 'expo';
+import {Facebook} from 'expo';
 
 import {
     Text,
@@ -31,7 +31,7 @@ class FBButton extends React.Component {
             } else {
                 // type === 'cancel'
             }
-        } catch ({ message }) {
+        } catch ({message}) {
             alert(`Facebook Login Error: ${message}`);
         }
     }
@@ -42,7 +42,7 @@ class FBButton extends React.Component {
                 <TouchableOpacity onPress={this.logIn.bind(this)}>
                     <View style={styles.facebook_button}>
                         <Image
-                            source={{ uri: 'https://img.icons8.com/cotton/2x/facebook.png' }}
+                            source={{uri: 'https://img.icons8.com/cotton/2x/facebook.png'}}
                             style={styles.facebook_logo}
                         />
                         <View>
