@@ -1,15 +1,21 @@
 import * as React from 'react';
 import {AppRegistry} from 'react-native';
-import { createStackNavigator } from 'react-navigation';
+import {createStackNavigator} from 'react-navigation';
 import BasicApp from './apps/BasicApp/BasicApp'
 import WeatherApp from './apps/WeatherApp/index'
 import Home from './apps/Home/Home'
 
 const AppNavigator = createStackNavigator({
-    HomeScreen: {screen: Home},
-    BasicAppScreen: {screen: BasicApp},
-    WeatherAppScreen: {screen: WeatherApp},
-})
+        HomeScreen: {screen: Home},
+        BasicAppScreen: {screen: BasicApp},
+        WeatherAppScreen: {screen: WeatherApp},
+    },
+    {
+        headerMode: 'none',
+        navigationOptions: {
+            headerVisible: false,
+        }
+    })
 
 class ReduxApp extends React.Component {
     render() {
