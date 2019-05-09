@@ -9,13 +9,8 @@ const AppNavigator = createStackNavigator({
         HomeScreen: {screen: Home},
         BasicAppScreen: {screen: BasicApp},
         WeatherAppScreen: {screen: WeatherApp},
-    },
-    {
-        headerMode: 'none',
-        navigationOptions: {
-            headerVisible: false,
-        }
-    })
+    }
+)
 
 class ReduxApp extends React.Component {
     render() {

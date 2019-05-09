@@ -9,7 +9,7 @@ export default class Header extends Component {
     constructor(props) {
         super(props);
         this.props = {
-            'title': 'Title'
+            title: 'Title'
         }
     }
 

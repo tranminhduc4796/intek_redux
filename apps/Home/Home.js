@@ -5,7 +5,7 @@ export default class Home extends React.Component {
     render() {
         return (
             <View>
-                <Text>
+                <Text style={{textAlign: 'center'}}>
                     Choose the app you want to use
                 </Text>
                 <Button onPress={() => this.props.navigation.navigate('BasicAppScreen')} title="Basic App"/>
