@@ -11,7 +11,9 @@ function process_text(text) {
     cities.map(item => {
         // Remove accent
         let no_accent_name = item.name
+            .toLowerCase()
             .normalize('NFD')
+            .replace(/[đð]/g, "d")
             .replace(/[\u0300-\u036f]/g, '');
         if (no_accent_name.includes(text)) {
             cities_clone.push(item);
