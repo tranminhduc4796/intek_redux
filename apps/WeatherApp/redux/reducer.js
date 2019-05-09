@@ -15,7 +15,7 @@ function process_text(text) {
             .normalize('NFD')
             .replace(/[đð]/g, "d")
             .replace(/[\u0300-\u036f]/g, '');
-        if (no_accent_name.includes(text)) {
+        if (no_accent_name.includes(text.toLowerCase())) {
             cities_clone.push(item);
         }
     });

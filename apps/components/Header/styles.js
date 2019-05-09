@@ -4,7 +4,6 @@ import {
 
 export default StyleSheet.create({
     header_view: {
-        marginTop: 23,
         marginBottom: '10%',
         width: '100%',
         backgroundColor: '#33bbff',
