@@ -14,6 +14,7 @@ export default class Movie extends Component {
                 <FlatList
                     data={movieData}
                     renderItem={({item}) => <Stylish movie_item={item}/>}
+                    keyExtractor={(item, index) => index.toString()}
                 />
                 <Footer/>
             </View>
