@@ -5,6 +5,8 @@ import {
 } from 'react-native';
 import movieData from '../../assets/data/Info.json';
 import Stylish from './Stylish/Stylish'
+import Dimensions from 'Dimensions'
+
 const {height, width} = Dimensions.get('window');
 
 export default class Movie extends Component {
