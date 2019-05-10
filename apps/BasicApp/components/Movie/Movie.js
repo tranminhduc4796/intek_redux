@@ -5,19 +5,17 @@ import {
 } from 'react-native';
 import movieData from '../../assets/data/Info.json';
 import Stylish from './Stylish/Stylish'
-import Footer from './Footer/Footer'
+const {height, width} = Dimensions.get('window');
 
 export default class Movie extends Component {
     render() {
         return (
-            <View style={{height: '100%'}}>
-                <FlatList
-                    data={movieData}
-                    renderItem={({item}) => <Stylish movie_item={item}/>}
-                    keyExtractor={(item, index) => index.toString()}
-                />
-                <Footer/>
-            </View>
+            <FlatList
+                style={{height: height * 0.7}}
+                data={movieData}
+                renderItem={({item}) => <Stylish movie_item={item}/>}
+                keyExtractor={(item, index) => index.toString()}
+            />
         );
     }
 }
