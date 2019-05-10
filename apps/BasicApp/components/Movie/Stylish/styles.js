@@ -8,9 +8,10 @@ export default StyleSheet.create({
         fontSize: 16,
     },
     post_button: {
+        borderColor: '#33bbff',
         borderWidth: 1,
-        borderTopWidth: 0,
-        borderColor: 'rgba(0,0,0,0.3)',
-        padding: 8,
-    }
+        borderRadius: 8,
+        padding: 2,
+    },
+
 });
