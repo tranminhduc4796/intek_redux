@@ -9,7 +9,7 @@ There are 2 ways to see how the app works online:
 
     ![QR Code](./QR_code.png)
 
-(This project has not been modified to run in local yet)
+(This project has not been checked to run in local yet)
 ## Features
 * IMDB:
     * Show a list of 10 rating movies on IMDB descending.

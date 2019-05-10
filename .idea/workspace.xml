@@ -46,8 +46,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="435">
-                <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+              <first_editor relative-caret-position="375">
+                <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
               </first_editor>
               <second_editor />
             </state>
@@ -145,6 +145,11 @@
               <item name="intek_redux" type="b2602c69:ProjectViewProjectNode" />
               <item name="intek_redux" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="intek_redux" type="b2602c69:ProjectViewProjectNode" />
+              <item name="intek_redux" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -187,23 +192,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556932657066</updated>
-      <workItem from="1556932658262" duration="75235000" />
+      <workItem from="1556932658262" duration="76000000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75235000" />
+    <option name="totallyTimeSpent" value="76000000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18777293" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18777293" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.1304791" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.1304791" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -506,8 +510,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="435">
-            <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <first_editor relative-caret-position="375">
+            <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
           </first_editor>
           <second_editor />
         </state>
