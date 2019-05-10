@@ -9,8 +9,7 @@ export default StyleSheet.create({
     },
     post_button: {
         borderColor: '#33bbff',
-        borderWidth: 1,
-        borderRadius: 8,
+        borderWidth: 2,
         padding: 2,
     },
 
